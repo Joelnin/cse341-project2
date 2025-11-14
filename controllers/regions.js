@@ -4,10 +4,13 @@ const ObjectId = require('mongodb').ObjectId;
 const getAll = async (req, res) => {
     //#swagger.tags = ['Regions']
     const result = await mongodb.getDatabase().db().collection('regions').find();
-    result.toArray().then((regions) => {
+    result.toArray((err, lists) => {
+        if (err) {
+            res.status(400).json({ message: err });
+        }
 
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(regions)
+        res.status(200).json(lists);
     
     });
 };
@@ -16,9 +19,12 @@ const getSingle = async (req, res) => {
     //#swagger.tags = ['Regions']
     const regionId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('regions').find({ _id : regionId });
-    result.toArray().then((regions) => {
+    result.toArray((err, result) => {
+        if (err) {
+            res.status(400).json({ message: err });
+        }
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(regions[0])
+        res.status(200).json(result[0])
     
     });
 };
