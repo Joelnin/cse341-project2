@@ -134,31 +134,31 @@ DELETE http://localhost:3000/heroes/put-the-ID-here HTTP/1.1
 
 // REQUESTS: Get All
 ### Creatures 
-GET https://cse341-project1-63qg.onrender.com/creatures
+GET https://cse341-project2-9oga.onrender.com/creatures
 
 ### Regions 
-GET https://cse341-project1-63qg.onrender.com/regions
+GET https://cse341-project2-9oga.onrender.com/regions
 
 ### Heroes 
-GET https://cse341-project1-63qg.onrender.com/heroes
+GET https://cse341-project2-9oga.onrender.com/heroes
 
 
 
 // REQUESTS: Get by id
 ### Creature 
-GET https://cse341-project1-63qg.onrender.com/creatures/69167b42858c1c7dee4210a0
+GET https://cse341-project2-9oga.onrender.com/creatures/69167b42858c1c7dee4210a0
 
 ### Region 
-GET https://cse341-project1-63qg.onrender.com/regions/69167b42858c1c7dee4210a0
+GET https://cse341-project2-9oga.onrender.com/regions/69167b42858c1c7dee4210a0
 
 ### Heroe 
-GET https://cse341-project1-63qg.onrender.com/heroes/69167b42858c1c7dee4210a0
+GET https://cse341-project2-9oga.onrender.com/heroes/69167b42858c1c7dee4210a0
 
 
 
 // REQUESTS: Create
 ### Creature
-POST https://cse341-project1-63qg.onrender.com/creatures HTTP/1.1
+POST https://cse341-project2-9oga.onrender.com/creatures HTTP/1.1
 content-type: application/json
 
 {
@@ -174,7 +174,7 @@ content-type: application/json
 }
 
 ### Region
-POST https://cse341-project1-63qg.onrender.com/regions HTTP/1.1
+POST https://cse341-project2-9oga.onrender.com/regions HTTP/1.1
 content-type: application/json
 
 {
@@ -185,7 +185,7 @@ content-type: application/json
 }
 
 ### Heroe
-POST https://cse341-project1-63qg.onrender.com/heroes HTTP/1.1
+POST https://cse341-project2-9oga.onrender.com/heroes HTTP/1.1
 content-type: application/json
 
 {
@@ -205,7 +205,7 @@ content-type: application/json
 
 // REQUESTS: Update 
 ### Creature
-PUT https://cse341-project1-63qg.onrender.com/creatures/put-the-ID-here
+PUT https://cse341-project2-9oga.onrender.com/creatures/put-the-ID-here
 Content-Type: application/json
 
 {
@@ -221,7 +221,7 @@ Content-Type: application/json
 }
 
 ### region
-PUT https://cse341-project1-63qg.onrender.com/regions/put-the-ID-here
+PUT https://cse341-project2-9oga.onrender.com/regions/put-the-ID-here
 Content-Type: application/json
 
 {
@@ -232,7 +232,7 @@ Content-Type: application/json
 }
 
 ### Heroe
-PUT https://cse341-project1-63qg.onrender.com/heroes/put-the-ID-here
+PUT https://cse341-project2-9oga.onrender.com/heroes/put-the-ID-here
 Content-Type: application/json
 
 {
@@ -252,9 +252,9 @@ Content-Type: application/json
 
 // REQUESTS: Delete
 ### Creature
-DELETE https://cse341-project1-63qg.onrender.com/creatures/put-the-ID-here
+DELETE https://cse341-project2-9oga.onrender.com/creatures/put-the-ID-here
 
 ### region
-DELETE https://cse341-project1-63qg.onrender.com/regions/put-the-ID-here
+DELETE https://cse341-project2-9oga.onrender.com/regions/put-the-ID-here
 
-DELETE https://cse341-project1-63qg.onrender.com/heroes/put-the-ID-here
+DELETE https://cse341-project2-9oga.onrender.com/heroes/put-the-ID-here
