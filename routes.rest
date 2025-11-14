@@ -14,7 +14,7 @@ GET http://localhost:3000/heroes
 
 // REQUESTS: Get by id
 ### Creature 
-GET http://localhost:3000/creatures/691679b4858c1c7dee42109a
+GET http://localhost:3000/creatures/6916c8db907c70dffe5e618c
 
 ### Region 
 GET http://localhost:3000/regions/69167c40858c1c7dee4210a2
@@ -73,7 +73,7 @@ content-type: application/json
 
 // REQUESTS: Update 
 ### Creature
-PUT http://localhost:3000/creatures/put-the-ID-here
+PUT http://localhost:3000/creatures/6916c8db907c70dffe5e618c
 Content-Type: application/json
 
 {
@@ -89,7 +89,7 @@ Content-Type: application/json
 }
 
 ### Region
-PUT http://localhost:3000/regions/put-the-ID-here
+PUT http://localhost:3000/regions/6916c956907c70dffe5e618d
 Content-Type: application/json
 
 {
@@ -100,7 +100,7 @@ Content-Type: application/json
 }
 
 ### Heroe
-PUT http://localhost:3000/heroes/put-the-ID-here
+PUT http://localhost:3000/heroes/6916c959907c70dffe5e618e
 Content-Type: application/json
 
 {
@@ -120,12 +120,12 @@ Content-Type: application/json
 
 // REQUESTS: Delete
 ### Creature
-DELETE http://localhost:3000/creatures/put-the-ID-here HTTP/1.1
+DELETE http://localhost:3000/creatures/6916c8db907c70dffe5e618c HTTP/1.1
 ### Region
-DELETE http://localhost:3000/regions/put-the-ID-here HTTP/1.1
+DELETE http://localhost:3000/regions/6916c956907c70dffe5e618d HTTP/1.1
 
 ### Heroe
-DELETE http://localhost:3000/heroes/put-the-ID-here HTTP/1.1
+DELETE http://localhost:3000/heroes/6916c959907c70dffe5e618e HTTP/1.1
 
 
 
