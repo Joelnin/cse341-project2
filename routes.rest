@@ -1,0 +1,260 @@
+// LOCALHOST
+
+// REQUESTS: Get All
+### Creatures 
+GET http://localhost:3000/creatures
+
+### Regions 
+GET http://localhost:3000/regions
+
+### Heroes 
+GET http://localhost:3000/heroes
+
+
+
+// REQUESTS: Get by id
+### Creature 
+GET http://localhost:3000/creatures/691679b4858c1c7dee42109a
+
+### Region 
+GET http://localhost:3000/regions/69167c40858c1c7dee4210a2
+
+### Heroe 
+GET http://localhost:3000/heroes/69169f58bdf13051705cc533
+
+
+
+// REQUESTS: Create
+### Creature
+POST http://localhost:3000/creatures HTTP/1.1
+content-type: application/json
+
+{
+    "creatureName": "Brian",
+    "creatureType": "Humanoid",
+    "alignment": "Neutral Evil",
+    "hitPoints": 151,
+    "creatureSize": "Regular",
+    "abilities": ["Juggling chainsaws", "Sleep 48 Consecutive Hours"],
+    "weaknesses": ["Water","Soap"],
+    "region": "Arvelion Continent",
+    "lore": "He could be just a normal human teleported, but we would never know for sure. He is scary, though."
+}
+
+### Region
+POST http://localhost:3000/regions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "type": "Mountain",
+    "climate": "Snow",
+    "description":"Besides being near the sea, they mostly do not have a tropical climate. Their people are kind and almost the only warm thing there."
+}
+
+### Heroe
+POST http://localhost:3000/heroes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "class": "Archer",
+    "race": "Human",
+    "origin": "Juanajuato",
+    "abilities": [
+        "Arcane Arrow",
+        "Poison Arrow",
+        "Explosive Arrow"
+    ],
+    "lore": "She is the descendant of hawkeye but does not have an eye."
+}
+
+
+
+// REQUESTS: Update 
+### Creature
+PUT http://localhost:3000/creatures/put-the-ID-here
+Content-Type: application/json
+
+{
+    "creatureName": "Dane",
+    "creatureType": "Beast",
+    "alignment": "Unaligned",
+    "hitPoints": 77,
+    "creatureSize": "Large",
+    "abilities": ["Nyang Nyang Punch", "Profiterol Kick", "Unwilling Feet Itching"],
+    "weaknesses": ["His wife"],
+    "region": "Whisperbloom Forest",
+    "lore": "He is a lovely spouse with an easy life. His wife is the scary one."
+}
+
+### Region
+PUT http://localhost:3000/regions/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Cool place 2",
+    "type": "Island",
+    "climate": "Tropical",
+    "description":"This place doesn't appear on maps.Surrounded by dolphins and mermaids, it is the most dangerous place, besides Karthûl."
+}
+
+### Heroe
+PUT http://localhost:3000/heroes/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "class": "Support",
+    "race": "Giants",
+    "origin": "Dimsdale",
+    "abilities": [
+        "Juan Smashs!",
+        "Tap Dancing",
+        "Sing"
+    ],
+    "lore": "He is a friendly, but artistic giant who likes to sing but his feet are so big, they destroy everything in his way."
+}
+
+
+
+// REQUESTS: Delete
+### Creature
+DELETE http://localhost:3000/creatures/put-the-ID-here HTTP/1.1
+### Region
+DELETE http://localhost:3000/regions/put-the-ID-here HTTP/1.1
+
+### Heroe
+DELETE http://localhost:3000/heroes/put-the-ID-here HTTP/1.1
+
+
+
+// PRODUCTION
+
+
+// REQUESTS: Get All
+### Creatures 
+GET https://cse341-project1-63qg.onrender.com/creatures
+
+### Regions 
+GET https://cse341-project1-63qg.onrender.com/regions
+
+### Heroes 
+GET https://cse341-project1-63qg.onrender.com/heroes
+
+
+
+// REQUESTS: Get by id
+### Creature 
+GET https://cse341-project1-63qg.onrender.com/creatures/69167b42858c1c7dee4210a0
+
+### Region 
+GET https://cse341-project1-63qg.onrender.com/regions/69167b42858c1c7dee4210a0
+
+### Heroe 
+GET https://cse341-project1-63qg.onrender.com/heroes/69167b42858c1c7dee4210a0
+
+
+
+// REQUESTS: Create
+### Creature
+POST https://cse341-project1-63qg.onrender.com/creatures HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Brian",
+    "type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "hitPoints": 151,
+    "size": "Regular",
+    "abilities": ["Juggling chainsaws", "Sleep 48 Consecutive Hours"],
+    "weaknesses": ["Water","Soap"],
+    "region": "Arvelion Continent",
+    "lore": "He could be just a normal human teleported, but we would never know for sure. He is scary, though."
+}
+
+### Region
+POST https://cse341-project1-63qg.onrender.com/regions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "type": "Mountain",
+    "climate": "Snow",
+    "description":"Besides being near the sea, they mostly do not have a tropical climate. Their people are kind and almost the only warm thing there."
+}
+
+### Heroe
+POST https://cse341-project1-63qg.onrender.com/heroes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "class": "Archer",
+    "race": "Human",
+    "origin": "Juanajuato",
+    "abilities": [
+        "Arcane Arrow",
+        "Poison Arrow",
+        "Explosive Arrow"
+    ],
+    "lore": "She is the descendant of hawkeye but does not have an eye."
+}
+
+
+
+// REQUESTS: Update 
+### Creature
+PUT https://cse341-project1-63qg.onrender.com/creatures/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Dane",
+    "type": "Beast",
+    "alignment": "Unaligned",
+    "hitPoints": 77,
+    "size": "Large",
+    "abilities": ["Nyang Nyang Punch", "Profiterol Kick", "Unwilling Feet Itching"],
+    "weaknesses": ["His wife"],
+    "region": "Whisperbloom Forest",
+    "lore": "He is a lovely spouse with an easy life. His wife is the scary one."
+}
+
+### region
+PUT https://cse341-project1-63qg.onrender.com/regions/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Cool place 2",
+    "type": "Island",
+    "climate": "Tropical",
+    "description":"This place doesn't appear on maps.Surrounded by dolphins and mermaids, it is the most dangerous place, besides Karthûl."
+}
+
+### Heroe
+PUT https://cse341-project1-63qg.onrender.com/heroes/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "class": "Support",
+    "race": "Giants",
+    "origin": "Dimsdale",
+    "abilities": [
+        "Juan Smashs!",
+        "Tap Dancing",
+        "Sing"
+    ],
+    "lore": "He is a friendly, but artistic giant who likes to sing but his feet are so big, they destroy everything in his way."
+}
+
+
+
+// REQUESTS: Delete
+### Creature
+DELETE https://cse341-project1-63qg.onrender.com/creatures/put-the-ID-here
+
+### region
+DELETE https://cse341-project1-63qg.onrender.com/regions/put-the-ID-here
+
+DELETE https://cse341-project1-63qg.onrender.com/heroes/put-the-ID-here
