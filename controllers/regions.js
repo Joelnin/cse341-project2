@@ -27,12 +27,9 @@ const createRegion = async (req, res) => {
     //#swagger.tags = ['Regions']
     const region = {
         name: req.body.name,
-        class: req.body.class,
-        race: req.body.race,
-        origin: req.body.origin,
-        abilities: req.body.abilities,
-        hiddenAbility: req.body.hiddenAbility,
-        lore: req.body.lore
+        type: req.body.type,
+        climate: req.body.climate,
+        description: req.body.description
     };
     const response = await mongodb.getDatabase().db().collection('regions').insertOne(region);
     if (response.acknowledged) {
@@ -48,12 +45,9 @@ const updateRegion = async (req, res) => {
     const regionId = new ObjectId(req.params.id);
     const region = {
         name: req.body.name,
-        class: req.body.class,
-        race: req.body.race,
-        origin: req.body.origin,
-        abilities: req.body.abilities,
-        hiddenAbility: req.body.hiddenAbility,
-        lore: req.body.lore
+        type: req.body.type,
+        climate: req.body.climate,
+        description: req.body.description
     };
     const response = await mongodb.getDatabase().db().collection('regions').replaceOne({ _id: regionId }, region);
     if (response.modifiedCount > 0) {
