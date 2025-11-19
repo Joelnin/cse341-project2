@@ -42,8 +42,12 @@ function getSingle(collection) {
                 .find({ _id: resultId })
                 .toArray();
             
-            res.setHeader('Content-Type', 'application/json');            
-            res.status(200).json(result[0])
+            if (!result.isEmpty()) {
+                res.setHeader('Content-Type', 'application/json');            
+                res.status(200).json(result[0]);
+            }
+            
+            
             
         } catch (error) {
 
