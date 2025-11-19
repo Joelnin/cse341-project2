@@ -5,10 +5,10 @@
     "description": "DnD Helper Api",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-9oga.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -39,6 +39,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -67,6 +70,9 @@
                   "example": "any"
                 },
                 "abilities": {
+                  "example": ["any"]
+                },
+                "hiddenAbility": {
                   "example": "any"
                 },
                 "lore": {
@@ -79,6 +85,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -109,6 +118,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -143,6 +155,9 @@
                   "example": "any"
                 },
                 "abilities": {
+                  "example": ["any"]
+                },
+                "hiddenAbility": {
                   "example": "any"
                 },
                 "lore": {
@@ -155,6 +170,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -199,6 +217,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -234,6 +255,9 @@
           "204": {
             "description": "No Content"
           },
+          "400": {
+            "description": "Bad Request"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -263,6 +287,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -303,6 +330,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -347,6 +377,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -372,16 +405,16 @@
                   "example": "any"
                 },
                 "hitPoints": {
-                  "example": "any"
+                  "example": 33
                 },
                 "creatureSize": {
                   "example": "any"
                 },
                 "abilities": {
-                  "example": "any"
+                  "example": ["any"]
                 },
                 "weaknesses": {
-                  "example": "any"
+                  "example": ["any"]
                 },
                 "region": {
                   "example": "any"
@@ -396,6 +429,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -426,6 +462,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -457,16 +496,16 @@
                   "example": "any"
                 },
                 "hitPoints": {
-                  "example": "any"
+                  "example": 33
                 },
                 "creatureSize": {
                   "example": "any"
                 },
                 "abilities": {
-                  "example": "any"
+                  "example": ["any"]
                 },
                 "weaknesses": {
-                  "example": "any"
+                  "example": ["any"]
                 },
                 "region": {
                   "example": "any"
@@ -481,6 +520,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
