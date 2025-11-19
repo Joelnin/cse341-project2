@@ -42,12 +42,12 @@ function getSingle(collection) {
                 .find({ _id: resultId })
                 .toArray();
             
-            if (!result.isEmpty()) {
-                res.setHeader('Content-Type', 'application/json');            
-                res.status(200).json(result[0]);
+            if (!result) {
+                return res.status(500).json({ message: "Internal Server Error", error });
             }
             
-            
+            res.setHeader('Content-Type', 'application/json');            
+            res.status(200).json(result[0]);
             
         } catch (error) {
 
@@ -90,8 +90,6 @@ function updateInstance(collection) {
         try {
 
             const resultId = new ObjectId(req.params.id);
-
-            
 
             const instance = req.body;
 
