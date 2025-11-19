@@ -176,6 +176,7 @@ DELETE https://cse341-project2-9oga.onrender.com/creatures/put-the-ID-here
 
 
 // -- REGIONS -- //
+### Get All
 GET https://cse341-project2-9oga.onrender.com/regions
 
 ### Get by id
@@ -209,6 +210,7 @@ DELETE https://cse341-project2-9oga.onrender.com/regions/put-the-ID-here
 
 
 // -- HEROES -- //
+### Get All
 GET https://cse341-project2-9oga.onrender.com/heroes
 
 ### Get by id
