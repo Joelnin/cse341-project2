@@ -1,0 +1,254 @@
+// -- LOCALHOST -- //
+
+
+// -- CREATURES -- //
+### Get All
+GET http://localhost:3000/creatures
+
+### Get by id
+GET http://localhost:3000/creatures/6916c8db907c70dffe5e618c
+
+### Create
+POST http://localhost:3000/creatures HTTP/1.1
+content-type: application/json
+
+{
+    "creatureName": "Brian",
+    "creatureType": "Humanoid",
+    "alignment": "Neutral Evil",
+    "hitPoints": 151,
+    "creatureSize": "Regular",
+    "abilities": ["Juggling chainsaws", "Sleep 48 Consecutive Hours"],
+    "weaknesses": ["Water","Soap"],
+    "region": "Arvelion Continent",
+    "lore": "He could be just a normal human teleported, but we would never know for sure. He is scary, though."
+}
+
+### Update
+PUT http://localhost:3000/creatures/6916c8db907c70dffe5e618c
+Content-Type: application/json
+
+{
+    "creatureName": "Dane",
+    "creatureType": "Beast",
+    "alignment": "Unaligned",
+    "hitPoints": 77,
+    "creatureSize": "Large",
+    "abilities": ["Nyang Nyang Punch", "Profiterol Kick", "Unwilling Feet Itching"],
+    "weaknesses": ["His wife"],
+    "region": "Whisperbloom Forest",
+    "lore": "He is a lovely spouse with an easy life. His wife is the scary one."
+}
+
+### Delete
+DELETE http://localhost:3000/creatures/6916c8db907c70dffe5e618c HTTP/1.1
+
+
+
+// -- REGIONS -- //
+### Get All
+GET http://localhost:3000/regions
+
+### Get by id
+GET http://localhost:3000/regions/69167c40858c1c7dee4210a2
+
+### Create
+POST http://localhost:3000/regions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "type": "Mountain",
+    "climate": "Snow",
+    "description":"Besides being near the sea, they mostly do not have a tropical climate. Their people are kind and almost the only warm thing there."
+}
+
+### Update
+PUT http://localhost:3000/regions/6916c956907c70dffe5e618d
+Content-Type: application/json
+
+{
+    "name": "Cool place 2",
+    "type": "Island",
+    "climate": "Tropical",
+    "description":"This place doesn't appear on maps.Surrounded by dolphins and mermaids, it is the most dangerous place, besides Karthûl."
+}
+
+### Delete
+DELETE http://localhost:3000/regions/6916c956907c70dffe5e618d HTTP/1.1
+
+
+
+// -- HEROES -- //
+### Get All
+GET http://localhost:3000/heroes
+
+### Get by id
+GET http://localhost:3000/heroes/69169f58bdf13051705cc533
+
+### Create
+POST http://localhost:3000/heroes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "class": "Archer",
+    "race": "Human",
+    "origin": "Juanajuato",
+    "abilities": [
+        "Arcane Arrow",
+        "Poison Arrow",
+        "Explosive Arrow"
+    ],
+    "hiddenAbility": null,
+    "lore": "She is the descendant of hawkeye but does not have an eye."
+}
+
+### Update
+PUT http://localhost:3000/heroes/6916c959907c70dffe5e618e
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "class": "Support",
+    "race": "Giants",
+    "origin": "Dimsdale",
+    "abilities": [
+        "Juan Smashs!",
+        "Tap Dancing",
+        "Sing"
+    ],
+    "hiddenAbility": null,
+    "lore": "He is a friendly, but artistic giant who likes to sing but his feet are so big, they destroy everything in his way."
+}
+
+### Delete
+DELETE http://localhost:3000/heroes/6916c959907c70dffe5e618e HTTP/1.1
+
+
+
+
+// -- PRODUCTION -- //
+
+
+// -- CREATURES -- //
+### Get All
+GET https://cse341-project2-9oga.onrender.com/creatures
+
+### Get by id
+GET https://cse341-project2-9oga.onrender.com/creatures/69167b42858c1c7dee4210a0
+
+### Create
+POST https://cse341-project2-9oga.onrender.com/creatures HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Brian",
+    "type": "Humanoid",
+    "alignment": "Neutral Evil",
+    "hitPoints": 151,
+    "size": "Regular",
+    "abilities": ["Juggling chainsaws", "Sleep 48 Consecutive Hours"],
+    "weaknesses": ["Water","Soap"],
+    "region": "Arvelion Continent",
+    "lore": "He could be just a normal human teleported, but we would never know for sure. He is scary, though."
+}
+
+### Update
+PUT https://cse341-project2-9oga.onrender.com/creatures/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Dane",
+    "type": "Beast",
+    "alignment": "Unaligned",
+    "hitPoints": 77,
+    "size": "Large",
+    "abilities": ["Nyang Nyang Punch", "Profiterol Kick", "Unwilling Feet Itching"],
+    "weaknesses": ["His wife"],
+    "region": "Whisperbloom Forest",
+    "lore": "He is a lovely spouse with an easy life. His wife is the scary one."
+}
+
+### Delete
+DELETE https://cse341-project2-9oga.onrender.com/creatures/put-the-ID-here
+
+
+
+// -- REGIONS -- //
+GET https://cse341-project2-9oga.onrender.com/regions
+
+### Get by id
+GET https://cse341-project2-9oga.onrender.com/regions/69167b42858c1c7dee4210a0
+
+### Create
+POST https://cse341-project2-9oga.onrender.com/regions HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "type": "Mountain",
+    "climate": "Snow",
+    "description":"Besides being near the sea, they mostly do not have a tropical climate. Their people are kind and almost the only warm thing there."
+}
+
+### Update
+PUT https://cse341-project2-9oga.onrender.com/regions/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Cool place 2",
+    "type": "Island",
+    "climate": "Tropical",
+    "description":"This place doesn't appear on maps.Surrounded by dolphins and mermaids, it is the most dangerous place, besides Karthûl."
+}
+
+### Delete
+DELETE https://cse341-project2-9oga.onrender.com/regions/put-the-ID-here
+
+
+
+// -- HEROES -- //
+GET https://cse341-project2-9oga.onrender.com/heroes
+
+### Get by id
+GET https://cse341-project2-9oga.onrender.com/heroes/69167b42858c1c7dee4210a0
+
+### Create
+POST https://cse341-project2-9oga.onrender.com/heroes HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Merida",
+    "class": "Archer",
+    "race": "Human",
+    "origin": "Juanajuato",
+    "abilities": [
+        "Arcane Arrow",
+        "Poison Arrow",
+        "Explosive Arrow"
+    ],
+    "hiddenAbility": null,
+    "lore": "She is the descendant of hawkeye but does not have an eye."
+}
+
+### Update
+PUT https://cse341-project2-9oga.onrender.com/heroes/put-the-ID-here
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "class": "Support",
+    "race": "Giants",
+    "origin": "Dimsdale",
+    "abilities": [
+        "Juan Smashs!",
+        "Tap Dancing",
+        "Sing"
+    ],
+    "hiddenAbility": null,
+    "lore": "He is a friendly, but artistic giant who likes to sing but his feet are so big, they destroy everything in his way."
+}
+
+### Delete
+DELETE https://cse341-project2-9oga.onrender.com/heroes/put-the-ID-here
