@@ -89,6 +89,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Access Denied"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -174,6 +177,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Access Denied"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -195,6 +201,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "401": {
+            "description": "Access Denied"
           },
           "500": {
             "description": "Internal Server Error"
@@ -257,6 +266,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Access Denied"
           },
           "500": {
             "description": "Internal Server Error"
@@ -334,6 +346,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Access Denied"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -355,6 +370,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "401": {
+            "description": "Access Denied"
           },
           "500": {
             "description": "Internal Server Error"
@@ -432,6 +450,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Access Denied"
           },
           "500": {
             "description": "Internal Server Error"
@@ -524,6 +545,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Access Denied"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -545,6 +569,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "401": {
+            "description": "Access Denied"
           },
           "500": {
             "description": "Internal Server Error"
